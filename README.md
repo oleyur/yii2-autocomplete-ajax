@@ -11,7 +11,7 @@ Either add
 
 ```
 "require": {
-    "keygenqt/yii2-autocomplete-ajax": "*"
+    "oleyur/yii2-autocomplete-ajax": "*"
 }
 ```
 
