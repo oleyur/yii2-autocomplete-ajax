@@ -11,9 +11,9 @@ class ActiveAssets extends AssetBundle
 {
 	public $sourcePath = '@keygenqt/autocompleteAjax/assets';
 
-	public $js = [
-		'js/jquery-ui-1.9.2.custom.min.js',
-	];
+	// public $js = [
+	// 	'js/jquery-ui-1.9.2.custom.min.js',
+	// ];
 
 	public $depends = [
 		'yii\web\JqueryAsset'
