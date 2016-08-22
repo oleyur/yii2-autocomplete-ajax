@@ -81,7 +81,7 @@ class AutocompleteAjax extends InputWidget
                 var cache_{$this->getId()}_2 = {};
                 jQuery('#{$this->getId()}').autocomplete(
                 {
-                    minLength: 1,
+                    minLength: 3,
                     source: function( request, response )
                     {
                         var term = request.term;
@@ -133,7 +133,7 @@ class AutocompleteAjax extends InputWidget
                 var cache_{$this->getId()}_2 = {};
                 jQuery('#{$this->getId()}').autocomplete(
                 {
-                    minLength: 1,
+                    minLength: 3,
                     source: function( request, response )
                     {
                         var term = request.term;
