@@ -76,7 +76,7 @@ class AutocompleteAjax extends InputWidget
                         type: 'GET',
                         dataType: 'json',
                         url: '{$this->getViewUrl()}',
-                        data: {id: '$value[0]'},
+                        data: {id: '$value'},
                         success: function(data) {
 
                             if (data.length == 0) {
@@ -101,7 +101,7 @@ class AutocompleteAjax extends InputWidget
 
         $container = Html::tag('div',
 
-            Html::activeHiddenInput($this->model, $this->attribute . '[]', ['id' => $this->getId() . '-hidden', 'class' => 'form-control'])
+            Html::activeHiddenInput($this->model, $this->attribute, ['id' => $this->getId() . '-hidden', 'class' => 'form-control'])
             . ($value ? Html::tag('div', "<img src='{$this->registerActiveAssets()}/images/load.gif'/>", ['class' => 'autocomplete-image-load']) : '')
             . Html::textInput('', '', array_merge($this->options, ['id' => $this->getId(), 'class' => 'form-control']))
 
